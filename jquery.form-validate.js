@@ -1,8 +1,8 @@
 ﻿(function($) {
 	$.fn.Validate = function(settings) {
 		settings = jQuery.extend({
-			CallOn: $(".next, .finish"),
-			CallOnEvent: "click",
+			CallOn: this,
+			CallOnEvent: "submit",
 			Nofity: null
 		}, settings);
 		$.Validate.Settings = settings;
